@@ -14,5 +14,28 @@ namespace Business
             ProductDALC obj = new ProductDALC();
             return obj.GetProducts();
         }
+
+
+        public static List<JEVJ1_MuestraProductos_Result> GetProducts_SP()
+        {
+            ProductDALC obj = new ProductDALC();
+            return obj.GetProducts_SP();
+        }
+
+
+
+        public static List<JEVJ1_BuscaProductoPorID_Result> GetProductsById(int pId)
+        {
+            ProductDALC obj = new ProductDALC();
+            return obj.GetProductById(pId);
+        }
+
+
+
+        public static List<JEVJ1_BuscaProductoPorNombre_Result> GetProductsByName(string pName)
+        {
+            ProductDALC obj = new ProductDALC();
+            return obj.GetProductByName(pName);
+        }
     }
 }

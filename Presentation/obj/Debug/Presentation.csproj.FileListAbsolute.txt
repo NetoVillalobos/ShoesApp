@@ -19,3 +19,4 @@ C:\Users\Curso\Desktop\ShoesApp\Presentation\obj\Debug\Presentation.csproj.CoreC
 C:\Users\Curso\Desktop\ShoesApp\Presentation\obj\Debug\Presentation.csproj.CopyComplete
 C:\Users\Curso\Desktop\ShoesApp\Presentation\obj\Debug\Presentation.exe
 C:\Users\Curso\Desktop\ShoesApp\Presentation\obj\Debug\Presentation.pdb
+C:\Users\Curso\Desktop\ShoesApp\Presentation\obj\Debug\Presentation.FrmNuevoProducto.resources
