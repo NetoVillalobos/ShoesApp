@@ -46,6 +46,20 @@
             this.label15 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.cmbIdType = new System.Windows.Forms.ComboBox();
+            this.cmbIdColor = new System.Windows.Forms.ComboBox();
+            this.cmbIdBrand = new System.Windows.Forms.ComboBox();
+            this.cmbIdProvider = new System.Windows.Forms.ComboBox();
+            this.cmbIdCatalog = new System.Windows.Forms.ComboBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
+            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.txtObservations = new System.Windows.Forms.TextBox();
+            this.txtPriceDistributor = new System.Windows.Forms.TextBox();
+            this.txtPriceClient = new System.Windows.Forms.TextBox();
+            this.txtPriceMember = new System.Windows.Forms.TextBox();
+            this.dtpDateUpdate = new System.Windows.Forms.DateTimePicker();
+            this.txtKeywords = new System.Windows.Forms.TextBox();
+            this.chbIsEnabled = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -201,7 +215,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Location = new System.Drawing.Point(631, 345);
+            this.btnGuardar.Location = new System.Drawing.Point(669, 307);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(101, 41);
             this.btnGuardar.TabIndex = 17;
@@ -209,11 +223,132 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // cmbIdType
+            // 
+            this.cmbIdType.FormattingEnabled = true;
+            this.cmbIdType.Location = new System.Drawing.Point(488, 33);
+            this.cmbIdType.Name = "cmbIdType";
+            this.cmbIdType.Size = new System.Drawing.Size(57, 28);
+            this.cmbIdType.TabIndex = 18;
+            // 
+            // cmbIdColor
+            // 
+            this.cmbIdColor.FormattingEnabled = true;
+            this.cmbIdColor.Location = new System.Drawing.Point(488, 70);
+            this.cmbIdColor.Name = "cmbIdColor";
+            this.cmbIdColor.Size = new System.Drawing.Size(121, 28);
+            this.cmbIdColor.TabIndex = 19;
+            // 
+            // cmbIdBrand
+            // 
+            this.cmbIdBrand.FormattingEnabled = true;
+            this.cmbIdBrand.Location = new System.Drawing.Point(488, 104);
+            this.cmbIdBrand.Name = "cmbIdBrand";
+            this.cmbIdBrand.Size = new System.Drawing.Size(121, 28);
+            this.cmbIdBrand.TabIndex = 20;
+            // 
+            // cmbIdProvider
+            // 
+            this.cmbIdProvider.FormattingEnabled = true;
+            this.cmbIdProvider.Location = new System.Drawing.Point(488, 143);
+            this.cmbIdProvider.Name = "cmbIdProvider";
+            this.cmbIdProvider.Size = new System.Drawing.Size(121, 28);
+            this.cmbIdProvider.TabIndex = 21;
+            // 
+            // cmbIdCatalog
+            // 
+            this.cmbIdCatalog.FormattingEnabled = true;
+            this.cmbIdCatalog.Location = new System.Drawing.Point(488, 184);
+            this.cmbIdCatalog.Name = "cmbIdCatalog";
+            this.cmbIdCatalog.Size = new System.Drawing.Size(57, 28);
+            this.cmbIdCatalog.TabIndex = 22;
+            // 
+            // txtTitle
+            // 
+            this.txtTitle.Location = new System.Drawing.Point(488, 225);
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(100, 26);
+            this.txtTitle.TabIndex = 23;
+            // 
+            // txtDescription
+            // 
+            this.txtDescription.Location = new System.Drawing.Point(504, 307);
+            this.txtDescription.Name = "txtDescription";
+            this.txtDescription.Size = new System.Drawing.Size(100, 26);
+            this.txtDescription.TabIndex = 24;
+            // 
+            // txtObservations
+            // 
+            this.txtObservations.Location = new System.Drawing.Point(504, 338);
+            this.txtObservations.Name = "txtObservations";
+            this.txtObservations.Size = new System.Drawing.Size(100, 26);
+            this.txtObservations.TabIndex = 25;
+            // 
+            // txtPriceDistributor
+            // 
+            this.txtPriceDistributor.Location = new System.Drawing.Point(748, 34);
+            this.txtPriceDistributor.Name = "txtPriceDistributor";
+            this.txtPriceDistributor.Size = new System.Drawing.Size(100, 26);
+            this.txtPriceDistributor.TabIndex = 26;
+            // 
+            // txtPriceClient
+            // 
+            this.txtPriceClient.Location = new System.Drawing.Point(748, 74);
+            this.txtPriceClient.Name = "txtPriceClient";
+            this.txtPriceClient.Size = new System.Drawing.Size(100, 26);
+            this.txtPriceClient.TabIndex = 27;
+            // 
+            // txtPriceMember
+            // 
+            this.txtPriceMember.Location = new System.Drawing.Point(748, 109);
+            this.txtPriceMember.Name = "txtPriceMember";
+            this.txtPriceMember.Size = new System.Drawing.Size(100, 26);
+            this.txtPriceMember.TabIndex = 28;
+            // 
+            // dtpDateUpdate
+            // 
+            this.dtpDateUpdate.Location = new System.Drawing.Point(734, 232);
+            this.dtpDateUpdate.Name = "dtpDateUpdate";
+            this.dtpDateUpdate.Size = new System.Drawing.Size(200, 26);
+            this.dtpDateUpdate.TabIndex = 29;
+            // 
+            // txtKeywords
+            // 
+            this.txtKeywords.Location = new System.Drawing.Point(748, 194);
+            this.txtKeywords.Name = "txtKeywords";
+            this.txtKeywords.Size = new System.Drawing.Size(100, 26);
+            this.txtKeywords.TabIndex = 30;
+            // 
+            // chbIsEnabled
+            // 
+            this.chbIsEnabled.AutoSize = true;
+            this.chbIsEnabled.Checked = true;
+            this.chbIsEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chbIsEnabled.Location = new System.Drawing.Point(748, 156);
+            this.chbIsEnabled.Name = "chbIsEnabled";
+            this.chbIsEnabled.Size = new System.Drawing.Size(22, 21);
+            this.chbIsEnabled.TabIndex = 31;
+            this.chbIsEnabled.UseVisualStyleBackColor = true;
+            // 
             // FrmNuevoProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(991, 450);
+            this.Controls.Add(this.chbIsEnabled);
+            this.Controls.Add(this.txtKeywords);
+            this.Controls.Add(this.dtpDateUpdate);
+            this.Controls.Add(this.txtPriceMember);
+            this.Controls.Add(this.txtPriceClient);
+            this.Controls.Add(this.txtPriceDistributor);
+            this.Controls.Add(this.txtObservations);
+            this.Controls.Add(this.txtDescription);
+            this.Controls.Add(this.txtTitle);
+            this.Controls.Add(this.cmbIdCatalog);
+            this.Controls.Add(this.cmbIdProvider);
+            this.Controls.Add(this.cmbIdBrand);
+            this.Controls.Add(this.cmbIdColor);
+            this.Controls.Add(this.cmbIdType);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label13);
@@ -234,6 +369,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "FrmNuevoProducto";
             this.Text = "FrmNuevoProducto";
+            this.Load += new System.EventHandler(this.FrmNuevoProducto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -260,5 +396,19 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.ComboBox cmbIdType;
+        private System.Windows.Forms.ComboBox cmbIdColor;
+        private System.Windows.Forms.ComboBox cmbIdBrand;
+        private System.Windows.Forms.ComboBox cmbIdProvider;
+        private System.Windows.Forms.ComboBox cmbIdCatalog;
+        private System.Windows.Forms.TextBox txtTitle;
+        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.TextBox txtObservations;
+        private System.Windows.Forms.TextBox txtPriceDistributor;
+        private System.Windows.Forms.TextBox txtPriceClient;
+        private System.Windows.Forms.TextBox txtPriceMember;
+        private System.Windows.Forms.DateTimePicker dtpDateUpdate;
+        private System.Windows.Forms.TextBox txtKeywords;
+        private System.Windows.Forms.CheckBox chbIsEnabled;
     }
 }

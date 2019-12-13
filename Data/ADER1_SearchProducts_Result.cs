@@ -10,15 +10,12 @@
 namespace Data
 {
     using System;
-    using System.Collections.Generic;
     
-    public partial class SizeForProduct
+    public partial class ADER1_SearchProducts_Result
     {
-        public int IdSizeProduct { get; set; }
-        public int IdProduct { get; set; }
-        public int IdSize { get; set; }
-    
-        public virtual CatSize CatSize { get; set; }
-        public virtual Product Product { get; set; }
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+        public string Description { get; set; }
+        public decimal PriceClient { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace Data
 {
     using System;
     
-    public partial class CAOE_BUSCAR_Result
+    public partial class AVHM_BusquedaNombre_Result
     {
         public int Id { get; set; }
         public Nullable<int> IdType { get; set; }

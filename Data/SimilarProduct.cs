@@ -18,6 +18,6 @@ namespace Data
         public int IdProduct { get; set; }
         public int IdSimilary { get; set; }
     
-        public virtual Products Products { get; set; }
+        public virtual Product Product { get; set; }
     }
 }

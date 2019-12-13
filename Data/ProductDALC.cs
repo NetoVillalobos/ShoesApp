@@ -8,14 +8,14 @@ namespace Data
 {
     public class ProductDALC
     {
-        public List<Products> GetProducts()
+        public List<Product> GetProducts()
         {
             using (DataProductsEntities db = new DataProductsEntities())
             {
-                List<Products> lstProd = new List<Products>();
+                List<Product> lstProd = new List<Product>();
                 foreach (var item in db.Products.ToList())
                 {
-                    Products pet = new Products();
+                    Product pet = new Product();
                     pet.Id = item.Id;
                     pet.IdType = item.IdType;
                     pet.IdColor = item.IdColor;
@@ -150,13 +150,22 @@ namespace Data
 
 
 
-        //public void InsertProduct(string pName)
-        //{
-        //    using(DataProductsEntities db = new DataProductsEntities())
-        //    {
-        //        db.JEVJ1_InsertaNuevoProducto(null, null, null, null, null, pName, pName, pName, pName, pName, null, null, null, null);
-        //    }
-        //}
+        public void InsertProduct(int pIdType, int pIdColor, int pIdBrand, int pIdProvider, int pIdCatalog, string pTitle, string pName, string pDescription, string pObservations, decimal pPriceDistributor, decimal pPriceClient, decimal pPriceMember, bool pIsEnabled, string pKeywords, DateTime pDateUpdate)
+        {
+            using (DataProductsEntities db = new DataProductsEntities())
+            {
+                db.JEVJ1_InsertaNuevoProducto(pIdType, pIdColor, pIdBrand, pIdProvider, pIdCatalog, pTitle, pName, pDescription, pObservations, pPriceDistributor, pPriceClient, pPriceMember, pIsEnabled, pKeywords, pDateUpdate);
+            }
+        }
+
+
+        public void UpdateProduct(int pId, int pIdType, int pIdColor, int pIdBrand, int pIdProvider, int pIdCatalog, string pTitle, string pName, string pDescription, string pObservations, decimal pPriceDistributor, decimal pPriceClient, decimal pPriceMember, bool pIsEnabled, string pKeywords, DateTime pDateUpdate)
+        {
+            using (DataProductsEntities db = new DataProductsEntities())
+            {
+                db.JEVJ1_ActualizaProducto(pId, pIdType, pIdColor, pIdBrand, pIdProvider, pIdCatalog, pTitle, pName, pDescription, pObservations, pPriceDistributor, pPriceClient, pPriceMember, pIsEnabled, pKeywords, pDateUpdate);
+            }
+        }
 
     }
 }

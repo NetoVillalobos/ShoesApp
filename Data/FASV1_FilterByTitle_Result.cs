@@ -11,7 +11,7 @@ namespace Data
 {
     using System;
     
-    public partial class DataGrid_FernandoSanchez_Result
+    public partial class FASV1_FilterByTitle_Result
     {
         public int Id { get; set; }
         public Nullable<int> IdType { get; set; }

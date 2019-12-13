@@ -22,11 +22,21 @@ namespace Presentation
         private void Form1_Load(object sender, EventArgs e)
         {
             GetProducts_SP();
+
+            //Columna de Editar
+            DataGridViewLinkColumn link = new DataGridViewLinkColumn
+            {
+                HeaderText = "EDITAR",
+                Name = "edit",
+                Text = "EDITAR",
+                UseColumnTextForLinkValue = true
+            };
+            dgvProducts.Columns.Add(link);
         }
 
         private void GetProducts()
         {
-            List<Products> lst = ProductBL.GetProducts();
+            List<Product> lst = ProductBL.GetProducts();
             dgvProducts.DataSource = lst.ToList();
         }
 
@@ -79,15 +89,23 @@ namespace Presentation
             
 
 
-            
-
-
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             FrmNuevoProducto frmNuevoProducto = new FrmNuevoProducto();
             frmNuevoProducto.ShowDialog();
+        }
+
+        private void CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == 16)
+            {
+                //MessageBox.Show((e.RowIndex + 1).ToString() + " Row Clicked");
+                int id = (int)dgvProducts.CurrentRow.Cells["Id"].Value;
+                FrmNuevoProducto frmNuevoProducto = new FrmNuevoProducto(id);
+                frmNuevoProducto.ShowDialog();
+            }
         }
     }
 }

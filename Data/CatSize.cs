@@ -12,12 +12,12 @@ namespace Data
     using System;
     using System.Collections.Generic;
     
-    public partial class CatSizes
+    public partial class CatSize
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CatSizes()
+        public CatSize()
         {
-            this.SizeForProduct = new HashSet<SizeForProduct>();
+            this.SizeForProducts = new HashSet<SizeForProduct>();
         }
     
         public int IdSize { get; set; }
@@ -28,7 +28,7 @@ namespace Data
         public string Value { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SizeForProduct> SizeForProduct { get; set; }
+        public virtual ICollection<SizeForProduct> SizeForProducts { get; set; }
         public virtual CatTypeProduct CatTypeProduct { get; set; }
     }
 }

@@ -12,13 +12,13 @@ namespace Data
     using System;
     using System.Collections.Generic;
     
-    public partial class SizeForProduct
+    public partial class database_firewall_rules2
     {
-        public int IdSizeProduct { get; set; }
-        public int IdProduct { get; set; }
-        public int IdSize { get; set; }
-    
-        public virtual CatSize CatSize { get; set; }
-        public virtual Product Product { get; set; }
+        public int id { get; set; }
+        public string name { get; set; }
+        public string start_ip_address { get; set; }
+        public string end_ip_address { get; set; }
+        public System.DateTime create_date { get; set; }
+        public System.DateTime modify_date { get; set; }
     }
 }

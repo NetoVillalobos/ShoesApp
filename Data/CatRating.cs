@@ -12,13 +12,13 @@ namespace Data
     using System;
     using System.Collections.Generic;
     
-    public partial class CatRatings
+    public partial class CatRating
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CatRatings()
+        public CatRating()
         {
-            this.Comments = new HashSet<Comments>();
-            this.Qualification = new HashSet<Qualification>();
+            this.Comments = new HashSet<Comment>();
+            this.Qualifications = new HashSet<Qualification>();
         }
     
         public int IdRating { get; set; }
@@ -26,8 +26,8 @@ namespace Data
         public string Description { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Comments> Comments { get; set; }
+        public virtual ICollection<Comment> Comments { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Qualification> Qualification { get; set; }
+        public virtual ICollection<Qualification> Qualifications { get; set; }
     }
 }

@@ -12,22 +12,25 @@ namespace Data
     using System;
     using System.Collections.Generic;
     
-    public partial class CatTypeDetails
+    public partial class CatProvider
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public CatTypeDetails()
+        public CatProvider()
         {
-            this.DetailProduct = new HashSet<DetailProduct>();
+            this.CatCatalogs = new HashSet<CatCatalog>();
+            this.Products = new HashSet<Product>();
         }
     
-        public int IdTypeDetail { get; set; }
-        public int IdType { get; set; }
-        public string Code { get; set; }
+        public int IdProvider { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+        public Nullable<bool> IsEnabled { get; set; }
+        public Nullable<System.DateTime> DateUpdate { get; set; }
+        public string Url { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DetailProduct> DetailProduct { get; set; }
-        public virtual CatTypeProduct CatTypeProduct { get; set; }
+        public virtual ICollection<CatCatalog> CatCatalogs { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
